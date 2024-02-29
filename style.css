@@ -7,6 +7,10 @@ body{
     margin: 0;
 }
 
+.white-txt{
+    color: #fff;
+}
+
 .navbar{
     position: absolute;
 }
@@ -131,4 +135,31 @@ body{
 .edu-container:first-child{
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+.project-container{
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+.project-container > h1{
+    font-size: 3rem;
+}
+
+.project-container > h2{
+    color: #00BF63;
+    padding-top: 20px;
+}
+
+.project-container > p{
+    font-size: 2em;
+}
+
+.todo-image{
+    width: 50%;
+    object-fit: fill; 
 }
