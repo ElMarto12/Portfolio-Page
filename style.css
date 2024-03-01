@@ -138,7 +138,6 @@ body{
 }
 
 .project-container{
-    flex-direction: column;
     width: 100%;
     color: #fff;
     padding-top: 100px;
@@ -146,20 +145,43 @@ body{
     padding-right: 60px;
 }
 
-.project-container > h1{
-    font-size: 3rem;
+.project-container h1, .about-container h1, .contact-container h1{
+    font-size: 4rem;
 }
 
 .project-container > h2{
     color: #00BF63;
     padding-top: 20px;
+    font-size: 2em;
 }
 
-.project-container > p{
-    font-size: 2em;
+.project-container p, .about-container p{
+    font-size: x-large;
+    font-weight: 800;
 }
 
 .todo-image{
     width: 50%;
     object-fit: fill; 
+}
+
+.about-container{
+    width: 100%;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+.contact-container{
+    width: 100%;
+    color: #fff;
+    padding-top: 100px;
+    padding-left: 80px;
+    padding-right: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
