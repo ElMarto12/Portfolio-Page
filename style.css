@@ -5,9 +5,10 @@
 body{ 
     background-color: #545454;
     margin: 0;
+    color: #fff;
 }
 
-.white-txt{
+h2 > span{
     color: #fff;
 }
 
@@ -37,6 +38,7 @@ body{
 .header-container{
     display: flex;
     overflow: hidden;
+    height: 100vh;
 }
 
 .header-title{
@@ -64,23 +66,16 @@ body{
     bottom: 200px;
 }
 
-.green-text{
-    color: #00BF63;
-}
+.green-text{ color: #00BF63;}
 
-.grey-text{
-    color: #545454;
-}
+.grey-text{ color: #545454; }
 
 .container{
     display: flex;
     width: 100%;
-    height: 100vh;
 }
 
-.bg-green{
-    background-color: #00BF63;
-}
+.bg-green{ background-color: #00BF63;}
 
 .image-education{
     display: inherit;
@@ -99,6 +94,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 20px;
 }
 
 .edu-header{
@@ -138,12 +134,12 @@ body{
 }
 
 .project-container{
-    width: 100%;
-    color: #fff;
-    padding-top: 100px;
+    padding-top: 60px;
     padding-left: 80px;
     padding-right: 60px;
+    padding-bottom: 60px;
 }
+
 
 .project-container h1, .about-container h1, .contact-container h1{
     font-size: 4rem;
@@ -167,7 +163,6 @@ body{
 
 .about-container{
     width: 100%;
-    color: #fff;
     padding-top: 100px;
     padding-left: 80px;
     padding-right: 60px;
@@ -252,4 +247,51 @@ b{
     display: flex;
     gap: 20px;
     list-style: none;
+}
+
+@media screen and (max-width: 1300px){
+   .graphic-image{
+    display: none;
+   }
+
+   .navbar{
+    position: relative;
+   }
+
+   .nav-list{
+     display: flex;
+     justify-content: center;
+   }
+
+   .nav-list, .header-title h1, .header-title p{ margin-left: 0;}
+
+   .header-title{
+    display: inherit;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em;
+   }
+}
+
+@media screen and (max-width: 940px){
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .edu-content, .edu-header{
+        width: 100%;
+    }
+
+    #projects img{
+        order: 1;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .navbar{
+        display: none;
+    }
 }
